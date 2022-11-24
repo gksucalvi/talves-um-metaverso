@@ -13,6 +13,6 @@
 body {
     text-align: center;
     font-size: larger;
-
+    background: -o-linear-gradient(to right, purple, darkred);
 }
 
