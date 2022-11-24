@@ -22,6 +22,10 @@
 body {
     text-align: center;
     font-size: larger;
+    
+}
+
+.degrade {
     background-image: linear-gradient(to right, red , yellow);
 }
 
