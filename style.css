@@ -1,11 +1,17 @@
+body {
+    text-align: center;
+    font-size: larger;
+
+}
+
 .titl {
     font-size: 500%;
     color: #E748F0;
     text-align: center;
 }
 
-body {
-    text-align: center;
-    font-size: larger;
-
+.mamagem {
+    width: 80%;
+    right: auto;
+    
 }
