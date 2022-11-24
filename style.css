@@ -13,6 +13,6 @@
 body {
     text-align: center;
     font-size: larger;
-    background: linear-gradient(right, purple, darkred);
+    background-image: linear-gradient(right, purple, darkred);
 }
 
