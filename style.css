@@ -1,3 +1,9 @@
+.mamagem {
+    width: 80%;
+    right: auto;
+    
+}
+
 body {
     text-align: center;
     font-size: larger;
@@ -10,8 +16,3 @@ body {
     text-align: center;
 }
 
-.mamagem {
-    width: 80%;
-    right: auto;
-    
-}
