@@ -26,6 +26,6 @@ body {
 }
 
 .degrade {
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right,#6FE1F0 ,#E602E2 );
 }
 
