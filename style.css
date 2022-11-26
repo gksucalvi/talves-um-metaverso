@@ -8,16 +8,18 @@
 
 
 .titl {
-    font-size: 400%;
+    font-size: 250%;
     color: #E748F0;
     text-align: center;
+    position: relative;
+    left: 50%;
 }
 
 .mamagem {
     width: 16%;
     position: absolute;
-    right: 20%;
-    top: 10%;
+    right: 87%;
+    top: 1%;
     
 }
 
