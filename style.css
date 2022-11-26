@@ -35,7 +35,8 @@ body {
     background-image: linear-gradient(to right,#6FE1F0 ,#E602E2 );
 }
 
-main .text {
+.text {
     display: block;
+    font-size: 3%;
 }
 
