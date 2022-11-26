@@ -16,7 +16,9 @@
 .mamagem {
     width: 20%;
     right: auto;
-    position: relative;
+    position: absolute;
+    right: 10%;
+    up:10% ;
 }
 
 body {
