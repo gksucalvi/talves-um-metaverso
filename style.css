@@ -1,34 +1,64 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --font-main: Poppins, sans-serif;
+}
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
 
+header{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
 
-.titl {
-    font-size: 400%;
-    color: #E748F0;
+header #box-logo{
+    width: 15vw;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+header #box-logo img{
+    border-radius: 1rem;
+    width: 100%;
+    min-width: 120px;
+}
+
+header #title-main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    left: 3%;
-    padding: 1% 3% 5%;
-    margin: 0% 4% 1%;
 }
 
-.mamagem {
-    width: 9%;
-    position: absolute;
-    right: 90%;
-    top: 1%;
-    
+.title{
+    font-size: 4.8rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
     text-align: center;
     font-size: larger;
+    font-family: var(--font-main);
     
+}
+
+.title-topcs{
+    font-size: 2rem;
+    color: #423041;
 }
 
 .degrade {
@@ -36,16 +66,163 @@ body {
 }
 
 
-.text {
-    display: block;
-    font-size: 28px;
-    margin: 2% 12% 3%;
+.text{
+    font-size: 1.7rem;
     font-style:italic
+}  
+
+#introduction, #about, #not-maney, #roles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 13px 29px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 13px 29px -1px rgba(0,0,0,0.34);
+    box-shadow: 0px 13px 29px -1px rgba(0,0,0,0.34);
+    border-radius: 5px;
 }
 
-.titl2 {
-    font-size: 30px;
-    color: #E64D7C;
-    margin: 1% 0% 3%;
+#introduction{
+    border: 3px solid black;
+    box-shadow: none;
 }
 
+#form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 13px 29px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 13px 29px -1px rgba(0,0,0,0.34);
+    box-shadow: 0px 13px 29px -1px rgba(0,0,0,0.34);
+    border-radius: 5px;
+}
+
+#boxDis{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    width: 90%;
+    height: 650px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+
+#form{
+    margin-top: 80px;
+    box-shadow: none;
+    padding-bottom: 100px;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#form form input, label, textarea{
+    width: 50%;
+    display: flex;
+}
+
+#form form input, textarea{
+    height: 40px;
+    font-family: var(--font-main);
+    border: none;
+    padding-left: 5px;
+
+}
+
+textarea:focus{
+    border: 2px solid #E602E2;
+    outline: 0;
+}
+
+#form label{
+    margin-top: 20px;
+}
+
+#form textarea{
+    min-height: 200px;
+    max-height: 350px;
+    resize: vertical;
+    padding-top: 2px;
+}
+
+#form button{
+    width: 27%;
+    height: auto;
+    margin-top: 20px;
+    border: none;
+    background-color: #E602E2;
+    color: #fff;
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    transition: .2s;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#form button:hover{
+    background: linear-gradient(to top ,#6FE1F0 ,#E602E2);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/* style scrollbar */
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #212F3D ;       
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top,#6FE1F0 ,#E602E2 );    
+    border-radius: 20px;  
+}
+
+@media (max-width: 1090px){
+    #box-logo{
+        display: none;
+    }
+
+    #form form input, label, textarea{
+        width: 80%;
+    }
+}

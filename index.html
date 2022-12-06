@@ -6,28 +6,61 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
 </head>
-<header class="degrade">
-  <h1 class="titl">Metaverso das Galaxia</h1>
-  <img src="metaverso.jpg" alt="metaverso" class="mamagem">
-</header>
 
 <body class="degrade">
+  <header>
+    <div id="box-logo">
+      <img src="metaverso.jpg" alt="metaverso" >
+    </div>
+    <div id="title-main">
+      <h1 class="title">Metaverso das Galaxia </h1>
+    </div>
+  </header>
+
   <main>
-   
-    <p class="text">Esse vai ser o nosso metaverso por enquanto.
-      Vamos tentar fazer agora para entender e depois nós fazemos um melhor.</p>
-    <h2 class="titl2">Sobre</h2>
-    <p class="text">Nesse metaverso você pode ser o que você quiser sem restrições, aproveite a sua estadia no Multiverso das
-      Galaxia.</p>
-    <h3 class="titl2">Sem transações Monetárias</h2>
-    <p class="text">esse metaverso é isento de tarnsaçôes monetárias dos participntes, queremos uma experiencia boa e sem dinheiro
-      envolvido no "jogo".</p>
-    <h4 class="titl2">Sem Insultos ou Xingamentos</h3>
-    <p class="text">nesse metaverso é totalmente contra agressão verbal, ao descobrirmos uma conta na qual tenha acontecido isso
-      iremos bani-la do metaverso.</p>
+    <section id="introduction">
+      <p class="text">Esse vai ser o nosso metaverso por enquanto.
+        Vamos tentar fazer agora para entender e depois nós fazemos um melhor.</p>
+    </section>
+
+    <section id="about">
+      <h2 class="title-topcs">Sobre</h2>
+      <p class="text">Nesse metaverso você pode ser o que você quiser sem restrições, aproveite a sua estadia no Multiverso das Galaxia.</p>
+    </section>
+
+    <section id="not-maney">
+      <h2 class="title-topcs">Sem transações Monetárias</h2>
+        <p class="text">Esse metaverso é isento de tarnsaçôes monetárias dos participntes, queremos uma experiencia boa e sem dinheiro envolvido no "jogo".</p>
+    </section>
+
+    <section id="roles">
+      <h2 class="title-topcs">Sem Insultos ou Xingamentos</h2>
+      <p class="text">Nesse metaverso é totalmente contra agressão verbal, ao descobrirmos uma conta na qual tenha acontecido isso iremos bani-lo do metaverso.</p>
+    </section>
+  
+    <section id="form">
+      <div id="boxDis">Em Desenvolvimento</div>
+      <h2>Ajude a construir o Metaverso das Galaxia</h2>
+      <div>
+        Nos conte o que você gostaria de ver nesse Metaverso
+        <form id="formSuggestion" autocomplete="off">
+          <label for="name_user">Nome</label>
+          <input type="text" name="name_user" id="name_user" placeholder="Seu nome" required>
+          
+          <label for="email_user">Email</label>
+          <input type="email" name="email_user" id="email_user" placeholder="exemplo@email.com" required>
+          
+          <label for="suggestion">Qual sua sugestão?</label>
+          <textarea id="suggestion" name="suggestion" rows="4" cols="50" required></textarea>
+        </form>
+        <button id="sendM">Enviar</button>
+      </div>
+    </section>
   </main>
 
-
+  <footer>
+    <h5>2022&copy; Todos os direitos reservados</h5>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
