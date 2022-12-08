@@ -1,10 +1,7 @@
 const url  = "https://black-trout-ring.cyclic.app/api/metaversodasgalaxias/suggestions"
 
-const boxSpan = document.getElementById("boxDis")
-
-boxSpan.addEventListener("click", ()=>{
-    alert("Formulario indisponivel no momento!")
-})
+const boxDis = document.getElementById("boxDis")
+const loader = document.getElementById("loader");
 
 const formS = document.getElementById("formSuggestion")
 const btnSend = document.getElementById("sendM");
@@ -20,7 +17,10 @@ btnSend.addEventListener("click", async ()=>{
         email: inputEmail.value,
         suggestion: inputSuggestion.value
     }
-        
+    
+    boxDis.style.display = "flex";
+    loader.style.display = "block";
+
     await fetch(url, {
         headers: {
             'Accept': 'application/json',
@@ -29,8 +29,11 @@ btnSend.addEventListener("click", async ()=>{
         method: "POST",
         body: JSON.stringify(item) 
     })
-
-    alert("Enviado")
-
+    
+    loader.style.display = "none";
+    boxDis.innerHTML = "Enviado com sucesso!"
     formS.reset()
+    setInterval(()=>{
+        boxDis.style.display = "none";
+    }, 2000)
 })
