@@ -32,6 +32,7 @@ header #box-logo img{
 }
 
 header #box-logo img:hover{
+    transition-property: all;
     transition: 500ms linear;
 }
 
