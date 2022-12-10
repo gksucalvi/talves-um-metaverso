@@ -39,6 +39,11 @@ header #title-main{
     text-align: center;
 }
 
+header #title-main :hover {
+    
+    transition: color 2s ease 1s;
+}
+
 a {
     text-decoration: none;
 
