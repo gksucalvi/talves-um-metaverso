@@ -39,6 +39,11 @@ header #title-main{
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+
+}
+
 .title{
     font-size: 4.8rem;
 }
