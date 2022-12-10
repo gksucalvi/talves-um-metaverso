@@ -40,7 +40,7 @@ header #title-main{
 }
 
 header #title-main :hover {
-    transition: color 2s ease 1s;
+    transition: color 2s ease 0s;
     color:#E602E2
 }
 
