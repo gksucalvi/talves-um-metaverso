@@ -50,7 +50,7 @@ a {
 }
 
 .title{
-    font-size: 4.8rem;
+    transition: 500ms linear;
 }
 
 main{
