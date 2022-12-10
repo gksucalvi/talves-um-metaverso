@@ -33,7 +33,7 @@ header #box-logo img{
 
 header #box-logo img:hover{
     transition-property: all;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 header #title-main{
