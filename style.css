@@ -40,8 +40,8 @@ header #title-main{
 }
 
 header #title-main :hover {
-    
     transition: color 2s ease 1s;
+    color:#E602E2
 }
 
 a {
