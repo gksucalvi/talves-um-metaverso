@@ -21,19 +21,19 @@ header{
 header #box-logo{
     width: 15vw;
     height: auto;
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 header #box-logo img{
     border-radius: 1rem;
     width: 100%;
     min-width: 120px;
+    transition: 1.2s;
 }
 
 header #box-logo img:hover{
-    transition-property: all;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 header #title-main{
