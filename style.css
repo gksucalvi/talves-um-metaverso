@@ -261,3 +261,17 @@ body::-webkit-scrollbar-thumb {
         width: 80%;
     }
 }
+
+/* style pre alpha game */
+#pre-alpha{
+    width: 35%;
+    height: auto;
+    background-color: #1dd524;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+#pre-alpha a {
+    color: #fff;
+    padding: 5px;
+}
